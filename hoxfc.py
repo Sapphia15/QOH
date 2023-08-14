@@ -349,7 +349,7 @@ try:
                                     
                                     drdg=dcolor[0]-dcolor[1]
                                     dbdg=dcolor[2]-dcolor[1]
-                                    if (drdg>-9 and drdg<8 and dcolor[1]>-33 and dcolor[1]<32 and dbdg>-9 and dbdg[2]<8):
+                                    if (drdg>-9 and drdg<8 and dcolor[1]>-33 and dcolor[1]<32 and dbdg>-9 and dbdg<8):
                                         #print("Write LUMA")
                                         bins.append(int('10000000',2)+(dcolor[1]+32))
                                         bins.append((drdg+8)*2**4+(dbdg+8))
